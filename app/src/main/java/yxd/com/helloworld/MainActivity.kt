@@ -1,12 +1,14 @@
 package yxd.com.helloworld
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.kotlinlib.activity.AbstractKotlinActivity
+import com.kotlinlib.other.LayoutId
 
-class MainActivity : AppCompatActivity() {
+@LayoutId(R.layout.activity_main)
+class MainActivity : AbstractKotlinActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+    override fun init(bundle: Bundle?) {
+
     }
+
 }
